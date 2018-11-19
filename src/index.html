@@ -5,25 +5,77 @@
     <title></title>
   </head>
   <body>
-    <div class="">
-      <h1>bienvenida</h1>
-      <h2>descubre tus mensajes secretos</h2>
-      <input type="button" name="" value="Cifrar">
-      <input type="button" name="" value="Descifrar">
+    <header>
+      <p>ENNIGAPP</p>
+    </header>
+
+    <section>
+
+    <div id="homepage" style="display:none">
+      <h1>Bienvenida</h1>
+      <h2>Descubre tus mensajes secretos</h2>
+
+      <aside>
+          <button type="button" id="btn-cipher">Cifrar</button>
+          <button type="button" id="btn-decipher">Descifrar</button>
+
+      </aside>
     </div>
-    <div>
-      <p>comienza cifrando tus mensajes que deseas</p>
-      <input type="text" id="cambios" value="" style="width:4em;">
-      <textarea class="text" id="texto" cols="50" rows="10" style="width:40em; height:15em" ></textarea>
-      <input type="button" id="next" value="siguiente" onclick="cifrar">
+
+    <div id="page-cipher" style="display:none">
+      <p>Comienza cifrando tus mensajes que deseas</p>
+      <form class="" action="index.html" method="post">
+        <div id="displacement">
+          <label for="cambios">Desplazamiento: </label>
+          <input type="number" id="cambios" value="number" style="width:4em;">
+        </div>
+        <div id="message-cipher">
+          <label for="texto">Escribe el mensaje: </label>
+          <textarea class="text" id="texto" cols="50" rows="10" style="width:40em; height:15em" ></textarea>
+          <button type="button" id="next">Siguiente</button>
+        </div>
+      </form>
     </div>
-    <div class="">
-      <textarea class="text" id="texto" cols="50" rows="10" style="width:40em; height:15em" ></textarea>
-      <input type="button" id="regreso" value="volver" onclick="">
+
+    <div id="answer-cipher">
+      <label for="texto2">El mensaje cifrado es: </label>
+      <textarea class="text" id="texto2" cols="50" rows="10" style="width:40em; height:15em" ></textarea>
+      <button type="button" name="btn-back">Volver</button>
     </div>
-    <script src="apps.js">
+
+    <div id="page-decipher">
+      <p>Descifra el mensaje que deseas</p>
+      <form class="" action="index.html" method="post">
+        <div id="displacement2">
+          <label for="cambios2">Desplazamiento: </label>
+          <input type="number" id="cambios2" value="number" style="width:4em;">
+        </div>
+        <div id="message-decipher">
+          <label for="text-second">Escribe el mensaje: </label>
+          <textarea class="text" id="text-second" cols="50" rows="10" style="width:40em; height:15em" ></textarea>
+          <button type="button" name="next-second">Siguiente</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="answer-decipher">
+      <label for="answer-second">El mensaje descifrado es: </label>
+      <textarea class="text" id="answer-second" cols="50" rows="10" style="width:40em; height:15em" ></textarea>
+      <button type="button" name="btn-back-second">Volver</button>
+    </div>
+
+    <script type="text/javascript" src="cipher.js">
+
+    </script>
+    <script type="text/javascript" src="index.js">
 
     </script>
 
+
+    </section>
+
+    <footer>
+
+    </footer>
   </body>
 </html>
