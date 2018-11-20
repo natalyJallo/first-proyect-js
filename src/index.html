@@ -2,80 +2,56 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
-      <p>ENNIGAPP</p>
-    </header>
-
     <section>
+      <div id="homepage">
+        <h1>Bienvenida</h1>
+        <h2>descubre tus mensajes secretos</h2>
+        <input type="button" name="" value="Cifrar">
+        <input type="button" name="" value="Descifrar">
+      </div>
+      <div id="page-cipher">
+        <p>comienza cifrando tus mensajes que deseas</p>
+        <form action="index.html" method="post">
+          <label for="cambios">Dezplazamiento: </label>
+          <input type="text" id="cambios">
+          <label for="texto">Escribe el mensaje de deseas cifrar: </label>
+          <textarea type="text" id="texto" rows="8" cols="80" style="width:40em; height:15em" ></textarea>
+          <br></br>
+          <button type="button" name="button" id="next">Siguiente</button>
+        </form>
+      </div>
 
-    <div id="homepage" style="display:none">
-      <h1>Bienvenida</h1>
-      <h2>Descubre tus mensajes secretos</h2>
+      <div id="answer-cipher">
+        <p>Resultado: </p>
+        <textarea type="text" id="result-message" rows="8" cols="80" style="width:40em; height:15em"></textarea>
+      </div>
 
-      <aside>
-          <button type="button" id="btn-cipher">Cifrar</button>
-          <button type="button" id="btn-decipher">Descifrar</button>
+      <div id="page-decipher">
+        <p>comienza descifrando tus mensajes que deseas</p>
+        <form action="index.html" method="post">
+          <label for="cambios-second">Dezplazamiento: </label>
+          <input type="text" id="cambios-second">
+          <label for="texto-second">Escribe el mensaje de deseas cifrar: </label>
+          <textarea type="text" id="texto-second" rows="8" cols="80" style="width:40em; height:15em" ></textarea>
+          <br></br>
+          <button type="button" name="button" id="next-second">Siguiente</button>
+        </form>
+      </div>
 
-      </aside>
-    </div>
-
-    <div id="page-cipher" style="display:none">
-      <p>Comienza cifrando tus mensajes que deseas</p>
-      <form class="" action="index.html" method="post">
-        <div id="displacement">
-          <label for="cambios">Desplazamiento: </label>
-          <input type="number" id="cambios" value="number" style="width:4em;">
-        </div>
-        <div id="message-cipher">
-          <label for="texto">Escribe el mensaje: </label>
-          <textarea class="text" id="texto" cols="50" rows="10" style="width:40em; height:15em" ></textarea>
-          <button type="button" id="next">Siguiente</button>
-        </div>
-      </form>
-    </div>
-
-    <div id="answer-cipher">
-      <label for="texto2">El mensaje cifrado es: </label>
-      <textarea class="text" id="texto2" cols="50" rows="10" style="width:40em; height:15em" ></textarea>
-      <button type="button" name="btn-back">Volver</button>
-    </div>
-
-    <div id="page-decipher">
-      <p>Descifra el mensaje que deseas</p>
-      <form class="" action="index.html" method="post">
-        <div id="displacement2">
-          <label for="cambios2">Desplazamiento: </label>
-          <input type="number" id="cambios2" value="number" style="width:4em;">
-        </div>
-        <div id="message-decipher">
-          <label for="text-second">Escribe el mensaje: </label>
-          <textarea class="text" id="text-second" cols="50" rows="10" style="width:40em; height:15em" ></textarea>
-          <button type="button" name="next-second">Siguiente</button>
-        </div>
-      </form>
-    </div>
-
-    <div id="answer-decipher">
-      <label for="answer-second">El mensaje descifrado es: </label>
-      <textarea class="text" id="answer-second" cols="50" rows="10" style="width:40em; height:15em" ></textarea>
-      <button type="button" name="btn-back-second">Volver</button>
-    </div>
-
-    <script type="text/javascript" src="cipher.js">
-
-    </script>
-    <script type="text/javascript" src="index.js">
-
-    </script>
-
+      <div id="answer-decipher">
+        <p>Resultado: </p>
+        <textarea type="text" id="result-second" rows="8" cols="80" style="width:40em; height:15em"></textarea>
+      </div>
 
     </section>
 
-    <footer>
+    <script src="cipher.js">
+    </script>
 
-    </footer>
   </body>
 </html>
