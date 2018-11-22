@@ -1,0 +1,123 @@
+@import "https://fonts.googleapis.com/css?family=Comfortaa|Didact+Gothic|Fredoka+One|Pacifico|Signika|Varela+Round";
+/*font-family: 'Varela Round', sans-serif;
+font-family: 'Comfortaa', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Didact Gothic', sans-serif;
+font-family: 'Signika', sans-serif;
+font-family: 'Pacifico', cursive;*/
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Didact+Gothic|Fredoka+One|Pacifico|Varela+Round');
+/*font-family: 'Varela Round', sans-serif;
+font-family: 'Comfortaa', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Didact Gothic', sans-serif;
+font-family: 'Pacifico', cursive;*/
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Didact+Gothic|Fredoka+One|Varela+Round');
+/*font-family: 'Varela Round', sans-serif;
+font-family: 'Comfortaa', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Didact Gothic', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Didact+Gothic|Fredoka+One');
+/*font-family: 'Comfortaa', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Didact Gothic', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Fredoka+One');
+/*font-family: 'Fredoka One', cursive;
+font-family: 'Didact Gothic', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+/*font-family: 'Didact Gothic', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Amaranth|Didact+Gothic');
+@import url('https://fonts.googleapis.com/css?family=Amaranth|Didact+Gothic|Montserrat+Alternates');
+/*font-family: 'Didact Gothic', sans-serif;
+font-family: 'Amaranth', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;*/
+@import url("https://fonts.google.com/?selection.family=Amaranth|Didact+Gothic|Montserrat+Alternates|Raleway");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*diseño del encabezado*/
+header {
+  font-family: 'Didact Gothic', sans-serif;
+  width: 100%;
+  font-size: 20px
+}
+.contenedor {
+  width: 98%;
+  margin: auto;
+  background-color: #F4A460;
+  height: 40px;
+}
+.imagen1 {
+  width: "30px";
+  height: "30px";
+
+}
+
+/*diseño de la seccion principal*/
+body {
+  background-image: url("imagen1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/*diseño de cuadros de texto*/
+
+}
+.cuadro1 {
+  background-color: #FFFACD;/*color del fondo del boton*/
+  border-radius: 6px;/*redondeado de los bordes del boton*/
+  border: 2px solid #F4A460;  /*grososr para el borde del boton*/
+
+}
+/*diseño del boton cifrar y descifrar*/
+.btn1 {
+text-decoration: none; /*para no tener el boton subrayado*/
+padding: 20px; /*distancia entre el texto y el borde del boton*/
+font-weight: 20px; /*traza el grosor de las letras*/
+font-size: 30px;/*tamaño de la letra*/
+color: #FFE4B5;/*color de la letra*/
+background-color: #FF8C00;/*color del fondo del boton*/
+border-radius: 6px;/*redondeado de los bordes del boton*/
+border: 2px solid #FF8C00;  /*grososr para el borde del boton*/
+width: 200px; /*medida del ancho del boton*/
+height: 50px; /*medida de la altura del boton*/
+font-family: 'Raleway', sans-serif;
+letter-spacing: 2px;
+text-align: center;
+line-height: 15px;
+margin-left: 50%;
+margin-right: 80px;
+float: left
+}
+.btn1:hover {
+  color: #D2691E;
+  background-color: #FAEBD7;
+  border: 2px solid #FAEBD7;
+}
+
+/*diseño del boton siguiente*/
+.btn2 {
+  text-decoration: none;
+  padding: 20px;
+  font-weight: 20px;
+  font-size: 30px;
+  color: #FFE4E1;
+  background-color: #FF7F50;
+  border-radius: 6px;
+  border: 2px;
+  width: 200px;
+  height: 50px;
+  font-family: ;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 15px;
+  margin left: 500px;
+  margin-right: 500px;
+}
+.btn2:hover {
+  color: #DC143C;
+  background-color: #FFE4E1;
+  border: 2px solid #FFE4E1;
+}

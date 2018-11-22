@@ -3,51 +3,64 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrption" content="Pagina donde puedes cifrar y descifrar un mensaje">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontello.css">
   </head>
   <body>
+    <header>
+      <div class="contenedor">
+        <img src="email.png" class="imagen1">
+        <h1 class="contenedorTexto">enigmapp</h1>
+      </div>
+    </header>
     <section>
+      <div class="contenedor2">
+
       <div id="homepage">
         <h1>Bienvenida</h1>
         <h2>descubre tus mensajes secretos</h2>
-        <input type="button" id="cifrar" value="Cifrar">
-        <input type="button" id="descifrar" value="Descifrar">
+        <input type="button" id="cifrar" class="btn1" value="Cifrar">
+        <input type="button" id="descifrar" class="btn1" value="Descifrar">
       </div>
       <div id="page-cipher">
         <p>comienza cifrando tus mensajes que deseas</p>
         <form action="index.html" method="post">
           <label for="cambios">Dezplazamiento: </label>
-          <input type="text" id="cambios">
+          <input type="text" id="cambios" class="cuadro1">
           <label for="texto">Escribe el mensaje de deseas cifrar: </label>
-          <textarea type="text" id="texto" rows="8" cols="80" style="width:40em; height:15em" ></textarea>
+          <textarea type="text" id="texto" class="cuadro1" rows="8" cols="80" style="width:40em; height:15em" ></textarea>
           <br></br>
-          <button type="button" name="button" id="next">Siguiente</button>
+          <button type="button" name="button" id="next" class="btn2">Siguiente</button>
         </form>
       </div>
 
       <div id="answer-cipher">
         <p>Resultado: </p>
-        <textarea type="text" id="result-message" rows="8" cols="80" style="width:40em; height:15em"></textarea>
+        <textarea type="text" id="result-message" class="cuadro1" rows="8" cols="80" style="width:40em; height:15em"></textarea>
         <br></br>
-        <button type="button" name="button" id="next-end">Volver</button>
+        <button type="button" name="button" id="next-end" class="btn2">Volver</button>
       </div>
 
       <div id="page-decipher">
         <p>comienza descifrando tus mensajes que deseas</p>
         <form action="index.html" method="post">
           <label for="cambios-second">Dezplazamiento: </label>
-          <input type="text" id="cambios-second">
+          <input type="text" id="cambios-second" class="cuadro1">
           <label for="texto-second">Escribe el mensaje de deseas cifrar: </label>
-          <textarea type="text" id="texto-second" rows="8" cols="80" style="width:40em; height:15em" ></textarea>
+          <textarea type="text" id="texto-second" class="cuadro1" rows="8" cols="80" style="width:40em; height:15em" ></textarea>
           <br></br>
-          <button type="button" name="button" id="next-second">Siguiente</button>
+          <button type="button" name="button" id="next-second" class="btn2">Siguiente</button>
         </form>
       </div>
 
       <div id="answer-decipher">
         <p>Resultado: </p>
-        <textarea type="text" id="result-second" rows="8" cols="80" style="width:40em; height:15em"></textarea>
+        <textarea type="text" id="result-second" class="cuadro1" rows="8" cols="80" style="width:40em; height:15em"></textarea>
+        <br></br>
+        <button type="button" name="button" id="next-end-second" class="btn2">Volver</button>
+      </div>
       </div>
 
     </section>
