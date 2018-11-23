@@ -32,36 +32,54 @@ font-family: 'Amaranth', sans-serif;
 font-family: 'Montserrat Alternates', sans-serif;*/
 @import url("https://fonts.google.com/?selection.family=Amaranth|Didact+Gothic|Montserrat+Alternates|Raleway");
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;/*asegura que el relleno y el borde esta incluido en el ancho total y alturatotal de la caja*/
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
 }
+
+.contenedor {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  height: auto;
+}
+.fila {
+  position: relative;
+  margin: auto;
+  width: 98%;
+  height: auto;
+  float: left;
+}
+[class*"col-"]{
+  float: left;
+  border: 1px solid black;
+}
+.col-12 {
+  width: 100%;
+}
+.col-6{
+  width: 50%;
+  padding: 40px;
+}
+
+/*
+background-color: #F4A460;
 /*diseño del encabezado*/
 header {
   font-family: 'Didact Gothic', sans-serif;
-  width: 100%;
   font-size: 20px
 }
-.contenedor {
-  width: 98%;
-  margin: auto;
-  background-color: #F4A460;
-  height: 40px;
-}
-.imagen1 {
-  width: "30px";
-  height: "30px";
-
-}
-
 /*diseño de la seccion principal*/
-body {
+*/body {
   background-image: url("imagen1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
+}*/
 /*diseño de cuadros de texto*/
 
 }
