@@ -34,7 +34,7 @@ window.cipher = {
           else if (ubicacionDes >= 97 && ubicacionDes <= 122) {
             decipher = String.fromCharCode((ubicacionDes + 97 - offsetSecondNew) % 26 + 97);
           }
-          resultDecode += decipher;  
+          resultDecode += decipher;
         }
       return resultDecode;
     }

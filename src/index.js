@@ -96,3 +96,4 @@ clearText.addEventListener("click",limpiarTexto);
    document.getElementById("texto-second").value = "";
  }
  clearText2.addEventListener("click",limpiarTexto2);
+.............
