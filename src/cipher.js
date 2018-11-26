@@ -1,39 +1,41 @@
-const encryptEffect = document.getElementById("next");
+window.cipher = {
 
-const cifrar = () => {
-      const textElement = document.getElementById("texto").value;
-      const offset = parseInt(document.getElementById("cambios").value);
-      let cipher = "";
-        for (var i = 0; i < textElement.length; i++) {
-          const ubicacion = textElement.toUpperCase().charCodeAt(i);
+ encode : (offset,textElement) => {
+      let cipherText = "";
+      let resultEncode = "";
+        for (let i = 0; i < textElement.length; i++) {
+          let ubicacion = textElement.charCodeAt(i);
           if (ubicacion === 32) {
-            cipher += " ";
-          } else {
-            cipher = cipher + String.fromCharCode((ubicacion - 65 + offset) % 26 + 65);
+            cipherText = " ";
           }
-          let resultCipher = cipher;
-          document.getElementById("result-message").innerHTML = resultCipher;
+          else if (ubicacion >= 65 && ubicacion <=90) {
+            cipherText = String.fromCharCode((ubicacion - 65 + offset) % 26 + 65);
+          }
+          else if (ubicacion >= 97 && ubicacion <= 122){
+             cipherText = String.fromCharCode((ubicacion - 97 + offset) % 26 + 97);
+          }
+            resultEncode += cipherText;
+        }
+      return resultEncode;
+  },
+
+  decode : (offsetSecond,textElementSecond) => {
+      let decipher = "";
+      let resultDecode = "";
+        for (let j = 0; j < textElementSecond.length; j++) {
+          let ubicacionDes = textElementSecond.charCodeAt(j);
+          let offsetSecondNew = offsetSecond%26;
+          if (ubicacionDes === 32) {
+            decipher = " ";
+          }
+          else if (ubicacionDes >= 65 && ubicacionDes <=90) {
+            decipher = String.fromCharCode((ubicacionDes + 65 - offsetSecondNew) % 26 + 65);
+          }
+          else if (ubicacionDes >= 97 && ubicacionDes <= 122) {
+            decipher = String.fromCharCode((ubicacionDes + 97 - offsetSecondNew) % 26 + 97);
+          }
+          resultDecode += decipher;  
+        }
+      return resultDecode;
     }
-  }
-encryptEffect.addEventListener("click", cifrar);
-
-const decipherEffect = document.getElementById("next-second");
-
-const descifrar = () => {
-  const textElementSecond = document.getElementById("texto-second").value;
-  const offsetSecond = parseInt(document.getElementById("cambios-second").value);
-  let decipher = "";
-    for (var j = 0; j < textElementSecond.length; j++) {
-      const ubicacionDes = textElementSecond.toUpperCase().charCodeAt(j);
-      const offsetSecondNew = offsetSecond%26;
-      if (ubicacionDes === 32) {
-        decipher += " ";
-      } else {
-        decipher =  decipher + String.fromCharCode((ubicacionDes + 65 - offsetSecondNew) % 26 + 65);
-      }
-      let resultDecipher = decipher;
-      document.getElementById("result-second").innerHTML = resultDecipher;
-  }
 }
-
-decipherEffect.addEventListener("click", descifrar);
