@@ -38,13 +38,14 @@ header {
   top: 0;
   z-index: 100;
 }
+
 section {
   width: 100%;
 }
 /*diseño de la pagina principal*/
 
 .pagina {
-  width: 1366px;
+  width: 100%;
   opacity: 0.7;
   height: 710px;
   padding: 90px;
@@ -80,7 +81,7 @@ section {
   text-align: center;
   line-height: 30pt;
   font-size: 40px;
-  padding-top: 80px;
+  padding-top: 60px;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   color:  #FFF9FB;
@@ -88,12 +89,12 @@ section {
 /*Segundo texto de la pagina principal*/
 .text2 {
   text-align: center;
-  padding-top: 80px;
+  padding-top: 60px;
   line-height: 25pt;
   color: #242223;
   font-family: 'Raleway', sans-serif;
   font-family: 'Niramit', sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   padding-bottom: 20px;
 }
 /*Tercer encabezado de la pagina principal*/
@@ -121,11 +122,13 @@ section {
 }
 /*Estilo del espcaio de la caja donde va los botones*/
 .caja-btn {
-  width: 600px;
+  width: 500px;
   float: right;
-  padding-top: 100px;
-  padding-left: 100px;
-  word-spacing: 80px;
+  padding-top: 80px;
+  padding-left: 60px;
+  word-spacing: 50px;
+
+
 }
 p {
   font-size: 40px;
@@ -151,11 +154,11 @@ p {
 text-decoration: none; /*para no tener el boton subrayado*/
 padding: 20px; /*distancia entre el texto y el borde del boton*/
 font-weight: 20px; /*traza el grosor de las letras*/
-font-size: 30px;/*tamaño de la letra*/
-color: #FFE4B5;/*color de la letra*/
-background-color: #FF8C00;/*color del fondo del boton*/
+font-size: 25px;/*tamaño de la letra*/
+color: #FFFFFF;/*color de la letra*/
+background-color: #181616;/*color del fondo del boton*/
 border-radius: 6px;/*redondeado de los bordes del boton*/
-border: 2px solid #FF8C00;  /*grososr para el borde del boton*/
+border: 2px solid rgba(51, 49, 48, 0.3);;  /*grososr para el borde del boton*/
 width: 180px; /*medida del ancho del boton*/
 height: 50px; /*medida de la altura del boton*/
 font-family: 'Raleway', sans-serif;
@@ -166,9 +169,9 @@ padding-top: 15px;
 
 }
 .btn1:hover {
-  color: #D2691E;
-  background-color: #FAEBD7;
-  border: 2px solid #FAEBD7;
+  color: #181616;
+  background-color: rgba(255, 255, 255,0.4);
+  border: 2px solid rgba(51, 49, 48, 0.3);
   cursor: pointer;
 }
 
@@ -181,15 +184,19 @@ padding-top: 15px;
 p {
   text-align: center;
   font-size: 20px;
+  line-height: 20pt;
 }
 
 .form1 {
   width: 800px;
   margin: auto;
-  padding: 80px 30px;
+  padding: 60px 30px;
   line-height: 4pt;
-  height: 500px;
+  height: 550px;
   background: rgba(0, 0, 0, 0.4);
+}
+.form1 p {
+  color: #FFFFFF;
 }
 .form1 label {
   float: left;
@@ -248,11 +255,4 @@ textarea {
   box-shadow: 0 0 3px red;
   padding-right: 70x;
   line-height: 20pt;
-}
-
-
-@media (max-width:800px) {
-  form {
-    width: 100%;
-  }
 }
