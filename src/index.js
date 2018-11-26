@@ -60,3 +60,17 @@ volver.addEventListener("click",inicio);
     document.getElementById("answer-decipher").style.display="none";
   }
   backHome.addEventListener("click",volverPaginaInicio);
+
+const clearText = document.getElementById("prueba");
+const limpiarTexto = () => {
+   document.getElementById("cambios").value = "";
+   document.getElementById("texto").value = "";
+}
+clearText.addEventListener("click",limpiarTexto);
+
+ const clearText2 = document.getElementById("prueba2")
+ const limpiarTexto2 = () => {
+   document.getElementById("cambios-second").value = "";
+   document.getElementById("texto-second").value = "";
+ }
+ clearText2.addEventListener("click",limpiarTexto2);
