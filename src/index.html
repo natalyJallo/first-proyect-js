@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="descrption" content="Pagina donde puedes cifrar y descifrar un mensaje">
-    <title>CYBERKEYSAPP</title>
-    <link rel="incognito1" href="src/incognito1.png">
+    <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fontello.css">
     <link rel="stylesheet" href="https://www.flaticon.com/search?word=message">
@@ -14,29 +13,29 @@
     <link href="https://fonts.googleapis.com/css?family=Niramit|Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Niramit|Poppins|Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Niramit|Poppins|Quicksand|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="intro/css/bootstrap.min.css">
   </head>
   <body>
       <!--encabezado-->
       <header>
         <div class="encabezado">
-          <h1> <img src="incognito1.png">CYBERKEYSAPP</h1>
+          <h1> <img src="imagenes/incognito1.png">CYBERKEYSAPP</h1>
         </div>
       </header>
       <!--seccion de cuerpo-->
       <section>
+        <div>
 
-      <div>
-
-        <div id="homepage" class="pagina">
-          <h1 class="text1">"SIENTETE SEGURO Y PROTEGE TU INFORMACION PERSONAL"</h1>
-          <h2 class="text2">Ahora puedes crear contraseñas dificiles de descifrar usando como claves los dezplazamientos de letras para tus cuentas de redes sociales, paginas web, correos electronicos, etc.</h2>
-          <h3 class="text3">
-          <ul>
-            <li> <img src="checked.png" class="image2">  Crear contraseñas dificiles de descifrar protege tu informacion personal.</li>
-            <li> <img src="checked.png" class="image2">  Las contraseñas dificiles vita y protege robos informaticos a las cuentas personales.</li>
-            <li> <img src="checked.png" class="image2">  Tener diferentes contraseñas evitas que puedan hackear todas tus cuentas personales.</li>
-          </ul>
-          </h3>
+          <div id="homepage" class="pagina">
+            <h1 class="text1">"SIENTETE SEGURO Y PROTEGE TU INFORMACION PERSONAL"</h1>
+            <h2 class="text2">Ahora puedes crear contraseñas dificiles de descifrar usando como claves los dezplazamientos de letras para tus cuentas de redes sociales, paginas web, correos electronicos, etc.</h2>
+            <h3 class="text3">
+              <ul>
+                <li> <img src="imagenes/checked.png" class="image2">  Crear contraseñas dificiles de descifrar protege tu informacion personal.</li>
+                <li> <img src="imagenes/checked.png" class="image2">  Las contraseñas dificiles vita y protege robos informaticos a las cuentas personales.</li>
+                <li> <img src="imagenes/checked.png" class="image2">  Tener diferentes contraseñas evitas que puedan hackear todas tus cuentas personales.</li>
+              </ul>
+            </h3>
           <div class="caja-btn">
             <input type="button" id="cifrar" class="btn1" value="Cifrar">
             <input type="button" id="descifrar" class="btn1" value="Descifrar">
@@ -44,8 +43,8 @@
         </div>
 
         <div id="page-cipher" class="pagina">
+          <p>Ahora podras crear cifrando tus contraseñas y/o mensajes para tus diferentes cuentas, correos, paginas, usando un offset(desplazamiento) como clave de recorrido.</p>
           <form class="form1">
-            <p>Ahora podras crear cifrando tus contraseñas y/o mensajes para tus diferentes cuentas, correos, paginas, usando un offset(desplazamiento) como clave de recorrido.</p>
             <ul>
               <li>
                 <label for="cambios">Dezplazamiento: </label>
@@ -65,8 +64,8 @@
         </div>
 
         <div id="answer-cipher" class="pagina">
+          <p>Ahora puedes usar este mensaje cifrado para tus cuentas personales y asi poder evitar cualquier intento de robo cybernetico.</p>
           <form class="form1">
-            <p>Ahora puedes usar este mensaje cifrado para tus cuentas personales y asi poder evitar cualquier intento de robo cybernetico.</p>
             <ul>
               <li>
                 <label for="result-message">Resultado: </label>
@@ -81,8 +80,8 @@
         </div>
 
         <div id="page-decipher" class="pagina">
+          <p>Podras comenzar descifrando tus mensajes y/o contraseñas usando un offset(dezplazamiento) ya utilizado al inicio de crear tus contraseñas.</p>
           <form class="form1">
-            <p>Podras comenzar descifrando tus mensajes y/o contraseñas usando un offset(dezplazamiento) ya utilizado al inicio de crear tus contraseñas.</p>
             <ul>
               <li>
                 <label for="cambios-second">Dezplazamiento: </label>
@@ -101,8 +100,8 @@
         </div>
 
         <div id="answer-decipher" class="pagina">
+          <p>Ahora puedes saber tu contraseña descirada por si lo llegaste a olvidar.</p>
           <form class="form1">
-            <p>Ahora puedes saber tu contraseña descirada por si lo llegaste a olvidar.</p>
             <ul>
               <li>
                 <label for="result-second">Respuesta: </label>
@@ -110,16 +109,15 @@
               </li>
             </ul>
             <div class="btn2">
-              <button type="button" name="button" id="next-end-second" class="btn1">Volver</button>
+              <button type="button" name="button" id="next-end-second" class="btn1">VOLVER</button>
             </div>
-
           </form>
         </div>
       </div>
     </section>
-    <script src="cipher.js">
+    <script type="text/javascript" src="index.js">
       </script>
-    <script src="index.js">
+    <script type="text/javascript" src="cipher.js">
       </script>
   </body>
 </html>

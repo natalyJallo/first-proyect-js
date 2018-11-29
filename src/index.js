@@ -1,5 +1,3 @@
-
-
 const inicio = () => {
   document.getElementById("homepage").style.display="block";
   document.getElementById("page-cipher").style.display="none";
@@ -9,91 +7,77 @@ const inicio = () => {
 }
 inicio();
 
-// Pagina de cifrar
+// Pagina de cirar
 const nextPage = document.getElementById("cifrar");
-const paginaCifrar = () => {
+nextPage.addEventListener("click", () => {
   document.getElementById("homepage").style.display="none";
   document.getElementById("page-cipher").style.display="block";
   document.getElementById("answer-cipher").style.display="none";
   document.getElementById("page-decipher").style.display="none";
   document.getElementById("answer-decipher").style.display="none";
-}
-
-nextPage.addEventListener("click",paginaCifrar);
-
-//pagina de resultado de cifrar
-const nextPageResult = document.getElementById("next");
-
-const paginaResultado = () => {
-  const number = parseInt(document.getElementById("cambios").value);
-  const message = document.getElementById("texto").value;
-  const resultCipher = cipher.encode(number,message);
-  document.getElementById("result-message").innerHTML = resultCipher;
-  document.getElementById("homepage").style.display="none";
-  document.getElementById("page-cipher").style.display="none";
-  document.getElementById("answer-cipher").style.display="block";
-  document.getElementById("page-decipher").style.display="none";
-  document.getElementById("answer-decipher").style.display="none";
-}
-nextPageResult.addEventListener("click", () => {
-  paginaResultado()
 });
 
-// Funcion para volver al inicio
-const volver = document.getElementById("next-end");
-volver.addEventListener("click",inicio);
+// Pagina de resultado de cifrar
+ const nextPageResult = document.getElementById("next");
+ nextPageResult.addEventListener("click", () => {
+   const number = parseInt(document.getElementById("cambios").value);
+   const message = document.getElementById("texto").value;
+   const resultCipher = cipher.encode(number,message);
+   document.getElementById("result-message").innerHTML = resultCipher;
+   document.getElementById("homepage").style.display="none";
+   document.getElementById("page-cipher").style.display="none";
+   document.getElementById("answer-cipher").style.display="block";
+   document.getElementById("page-decipher").style.display="none";
+   document.getElementById("answer-decipher").style.display="none";
+ });
 
-// Pagina de descifrar
+// Evento de volver a la pagina de inicio
+ const volver = document.getElementById("next-end");
+ volver.addEventListener("click",inicio);
+
+// Pgina de descifrar
   const nextPageSecond = document.getElementById("descifrar");
-  const paginaDescifrarSegundo = () => {
+  nextPageSecond.addEventListener("click", () => {
     document.getElementById("homepage").style.display="none";
     document.getElementById("page-cipher").style.display="none";
     document.getElementById("answer-cipher").style.display="none";
     document.getElementById("page-decipher").style.display="block";
     document.getElementById("answer-decipher").style.display="none";
-  }
-  nextPageSecond.addEventListener("click",paginaDescifrarSegundo);
+  });
 
-//Pagina de resultado de descifrar
+  // Pagina de resultado de descifrar
   const nextPageResultSecond = document.getElementById("next-second");
-  const paginaResultadoDescifrar = ()=> {
+  nextPageResultSecond.addEventListener("click", () => {
+    const numberSecond = parseInt(document.getElementById("cambios-second").value);
     const messageSecond = document.getElementById("texto-second").value;
-    const numberSecond =  parseInt(document.getElementById("cambios-second").value);
     const resultDecipher = cipher.decode(numberSecond,messageSecond);
-    document.getElementById("result-second").innerHTML = resultDecode;
+    document.getElementById("result-second").innerHTML = resultDecipher;
     document.getElementById("homepage").style.display="none";
     document.getElementById("page-cipher").style.display="none";
     document.getElementById("answer-cipher").style.display="none";
     document.getElementById("page-decipher").style.display="none";
     document.getElementById("answer-decipher").style.display="block";
-  }
-  nextPageResultSecond.addEventListener("click", () => {
-    paginaResultadoDescifrar()
   });
-
-//Pagina de inicio
+// Pagina de volver al inicio
   const backHome = document.getElementById("next-end-second");
-  const volverPaginaInicio = () => {
+  backHome.addEventListener("click", () => {
     document.getElementById("homepage").style.display="block";
     document.getElementById("page-cipher").style.display="none";
     document.getElementById("answer-cipher").style.display="none";
     document.getElementById("page-decipher").style.display="none";
     document.getElementById("answer-decipher").style.display="none";
-  }
-  backHome.addEventListener("click",volverPaginaInicio);
+  });
 
-//funcion de limpiar texto de los inputs y textarea
+  // Limpiar texto cifrado
 const clearText = document.getElementById("prueba");
-const limpiarTexto = () => {
+clearText.addEventListener("click", () => {
    document.getElementById("cambios").value = "";
    document.getElementById("texto").value = "";
-}
-clearText.addEventListener("click",limpiarTexto);
+});
 
- const clearText2 = document.getElementById("prueba2")
- const limpiarTexto2 = () => {
+// limpiar texto de descifrado
+ const clearText2 = document.getElementById("prueba2");
+ clearText2.addEventListener("click", () => {
    document.getElementById("cambios-second").value = "";
    document.getElementById("texto-second").value = "";
- }
- clearText2.addEventListener("click",limpiarTexto2);
-.............
+ });
