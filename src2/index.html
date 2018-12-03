@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrption" content="Pagina donde puedes cifrar y descifrar un mensaje">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontello.css">
+    <link rel="stylesheet" href="https://www.flaticon.com/search?word=message">
+    <link rel="stylesheet" href="https://fonts.google.com/">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Niramit|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Niramit|Poppins|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Niramit|Poppins|Quicksand|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="intro/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Poppins" rel="stylesheet">
+  </head>
+  <body>
+      <!--encabezado-->
+      <header >
+        <div class="container-fluid">
+          <h1><img src="imagenes/incognito1.png">CYBERHACK</h1>
+          <div class="icons">
+            <img src="imagenes/facebook.png" class="image">
+            <img src="imagenes/instagram.png" class="image">
+            <img src="imagenes/twitter.png" class="image">
+            <img src="imagenes/pinterest.png" class="image">
+          </div>
+        </div>
+
+      </header>
+      <!--seccion de cuerpo-->
+      <section class="conteiner-fluid">
+        <div id="home">
+        <div id="homepage" class="pagina col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h1 class="text1">"SIENTETE SEGURO Y PROTEGE<br/>TU INFORMACION PERSONAL"</h1>
+          <h2 class="text2">Ahora puedes crear contraseñas dificiles<br/> de hackear para tus cuentas personales como <br/>redes sociales, paginas web, correos electronicos, etc.</h2>
+        </div>
+        <div id="homepage-second">
+          <article class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+            <h1><img src="imagenes/escudo (1).png" class="image2"></h1>
+            <p> Crear contraseñas dificiles de descifrar protege tu informacion personal.</p>
+          </article>
+          <article class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+            <h1><img src="imagenes/bloqueado.png" class="image2"></h1>
+            <p>Las contraseñas dificiles evita y protege robos informaticos a las cuentas personales.</p>
+          </article>
+          <article class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+            <h1><img src="imagenes/anonimato.png" class="image2"></h1>
+            <p>Tener diferentes contraseñas evitas que puedan hackear todas tus cuentas personales.</p>
+          </article>
+        </div>
+        <div id ="box-btn1" class="box-btn" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="text4">
+            <p>Para comenzar a crear tus contraseñas seguras:</p>
+          </div>
+          <div class="box-text col-xs-12 col-sm-12 col-md-offset-2 col-md-3 col-lg-offset-2 col-lg-3">
+              <h4>Si deseas cifrar una contraseña usando los caractereres de mayusculas y minusculas, dale click en CIFRAR.</h4>
+              <input type="button" id="cifrar" class="btn1" value="Cifrar">
+          </div>
+          <div class="box-text col-xs-12 col-sm-12 col-md-offset-2 col-md-3 col-lg-offset-2 col-lg-3">
+              <h4>Si deseas descifrar una contraseña, dale click en DESCIFRAR.</h4>
+              <input type="button" id="descifrar" class="btn1" value="Descifrar">
+          </div>
+        </div>
+          </div>
+
+        <div id="page-cipher" class="pagina"  class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <p>Escribe una contraseña nueva, indicando un numero de desplazamiento(offset) como clave de recorrido para que se pueda cifrar.</p>
+          <form class="form1">
+            <ul>
+              <li>
+                <label for="cambios">Dezplazamiento: </label>
+                <input type="number" id="cambios" class="cuadro1" placeholder="Ingrese un numero" required>
+              </li>
+              <li>
+                <label for="texto">Contraseña: </label>
+                <textarea type="text" id="texto" class="cuadro1" rows="8" cols="80" placeholder="Ingrese el mensaje y/o contraseña" required></textarea>
+              </li>
+            </ul>
+            <div class="btn2">
+              <button type="button" name="button" id="next" class="btn1">Siguiente</button>
+              <button type="button" name="button" id="prueba" class="btn1">Limpiar</button>
+            </div>
+
+          </form>
+        </div>
+
+        <div id="answer-cipher" class="pagina"  class="pagina col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <p>Ahora puedes usar esta contraseña cifrada para tus cuentas personales y asi poder evitar cualquier intento de robo cybernetico.</p>
+          <form class="form1">
+            <ul>
+              <li>
+                <label for="result-message">Resultado: </label>
+                <textarea type="text" id="result-message" class="cuadro1" rows="8" cols="80" style="width:40em; height:15em"></textarea>
+              </li>
+            </ul>
+            <div class="btn2">
+              <button type="button" name="button" id="next-end" class="btn1">Volver</button>
+            </div>
+          </form>
+        </div>
+
+        <div id="page-decipher" class="pagina"  class="pagina col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <p>Escribe la contraseña cifrada, indicando tambien un numero de dezplazamiento(offset) ya utilizado al inicio de crear tus contraseñas.</p>
+          <form class="form1">
+            <ul>
+              <li>
+                <label for="cambios-second">Dezplazamiento: </label>
+                <input type="text" id="cambios-second" class="cuadro1" placeholder="Ingrese un numero" required>
+              </li>
+              <li>
+                <label for="texto-second">Mensaje: </label>
+                <textarea type="text" id="texto-second" class="cuadro1" rows="8" cols="80" style="width:40em; height:15em" placeholder="Ingrese el mensaje y/o contraseña" required></textarea>
+              </li>
+            </ul>
+            <div class="btn2">
+              <button type="button" name="button" id="next-second" class="btn1">Siguiente</button>
+              <button type="button" name="button" id="prueba2" class="btn1">Limpiar</button>
+            </div>
+          </form>
+        </div>
+
+        <div id="answer-decipher" class="pagina"  class="pagina col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <p>Ahora puedes saber tu contraseña descirada por si lo llegaste a olvidar.</p>
+          <form class="form1">
+            <ul>
+              <li>
+                <label for="result-second">Respuesta: </label>
+                <textarea type="text" id="result-second" class="cuadro1" rows="8" cols="80" style="width:40em; height:15em"></textarea>
+              </li>
+            </ul>
+            <div class="btn2">
+              <button type="button" name="button" id="next-end-second" class="btn1">VOLVER</button>
+            </div>
+          </form>
+        </div>
+    </section>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="cipher.js"></script>
+  </body>
+</html>
